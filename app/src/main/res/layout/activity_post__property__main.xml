@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activitys.Post_Property_Main">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout_post_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/post_property_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:src="@drawable/icon_back" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/post_a_property"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/layout_main_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:id="@+id/post_for_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/for_sale"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <View
+                        android:id="@+id/post_forsale_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="@dimen/_36sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_36sdp"
+                        android:background="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/post_for_rent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/for_rent"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <View
+                        android:id="@+id/post_forrent_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="@dimen/_36sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_36sdp"
+                        android:background="@color/green"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/post_property_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbarlayout_post_property"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

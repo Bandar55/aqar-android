@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_32sdp">
+
+            <ImageView
+                android:id="@+id/image_logo_dialog_layout_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/aqar_icon_new" />
+
+            <TextView
+                android:id="@+id/text_dialog_layout_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_logo_dialog_layout_signup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/hello_naveen"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/text_2_dialog_layout_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_dialog_layout_signup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/welcome_to_aquar55"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

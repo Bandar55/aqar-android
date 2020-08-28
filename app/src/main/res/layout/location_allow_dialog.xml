@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingTop="@dimen/_24sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_24sdp">
+
+    <TextView
+        android:id="@+id/text_location_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/allow_app_to_access_your_location"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/text_location_dialog"
+        android:layout_marginTop="@dimen/_24sdp">
+
+        <TextView
+            android:id="@+id/dont_allow_location"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/dark_red_with_corner"
+            android:gravity="center"
+            android:text="@string/don_t_allow"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/allow_location"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/dark_blue_with_corner"
+            android:gravity="center"
+            android:text="@string/allow"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+</RelativeLayout>

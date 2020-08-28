@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/broker"
+            android:textColor="@color/dark_red" />
+
+        <TextView
+            android:id="@+id/tvMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/map_red"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/_25k"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/maprent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/add_location_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/icon_back" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_location"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/view_add_location"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/add_location_toolbar"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSaveLocation"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_blue_btn"
+            android:gravity="center"
+            android:text="@string/save_location"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivMyLocation"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/white"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tvSaveLocation"
+            app:layout_constraintEnd_toEndOf="@+id/tvSaveLocation"
+            app:srcCompat="@drawable/location_icon" />
+
+        <ImageView
+            android:id="@+id/ivDishAnteena"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@+id/ivMyLocation"
+            app:layout_constraintEnd_toEndOf="@+id/ivMyLocation"
+            app:srcCompat="@drawable/dish_icon" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:text="@string/place_pin_at_your_property_location"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_add_location" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

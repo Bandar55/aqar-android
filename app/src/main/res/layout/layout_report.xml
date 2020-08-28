@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/propery_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+                <ImageView
+                    android:padding="@dimen/_8sdp"
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:src="@drawable/icon_back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/report"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/propery_detail_toolbar"
+            android:background="@android:color/darker_gray" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_1_report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_below="@+id/view_toolbar"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/light_gray_round_corner"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/tvReasons"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/updown_arrow"
+                android:gravity="center_vertical"
+                android:hint="@string/select_reason"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnReasons"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvReasons" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2_report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/layout_1_report"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/light_gray_round_corner"
+            android:padding="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/edtDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/enter_details"
+                android:gravity="left"
+                android:background="@null"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3_report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_below="@+id/layout_2_report"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/dark_blue"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

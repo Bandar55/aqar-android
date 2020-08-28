@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/ivPropertyImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/addimagesize" />
+
+        <TextView
+            android:id="@+id/tvProfessionalName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/professional_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ivEditManageProperty"
+            app:layout_constraintStart_toEndOf="@+id/ivPropertyImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProfCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/professional_category"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfessionalName"
+            app:layout_constraintStart_toStartOf="@+id/tvProfessionalName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfessionalName" />
+
+        <TextView
+            android:id="@+id/tvProfID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawableRight="@drawable/green"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="@string/professional_id_5263632"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/tvProfCategory"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfCategory" />
+
+        <ImageView
+            android:id="@+id/ivEditManageProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfessionalName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvProfessionalName"
+            app:srcCompat="@drawable/editicon" />
+
+        <TextView
+            android:id="@+id/tvSaveSpecificationBTn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/dark_blue_with_corner"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/update_52_90_days"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvProfID"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfID" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPropertyImage" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

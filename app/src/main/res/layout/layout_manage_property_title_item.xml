@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPropertyImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/placeholder_gray" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/title"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ivEditManageProperty"
+            app:layout_constraintStart_toEndOf="@+id/ivPropertyImage"
+            app:layout_constraintTop_toTopOf="@+id/ivPropertyImage" />
+
+        <TextView
+            android:id="@+id/tvProfCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_00_000"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/Title"
+            app:layout_constraintStart_toStartOf="@+id/Title"
+            app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+        <TextView
+            android:id="@+id/tvProfID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfCategory"
+            app:layout_constraintStart_toStartOf="@+id/tvProfCategory"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfCategory" />
+
+        <TextView
+            android:id="@+id/tvProfID2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price_per_sq_mtr"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfID"
+            app:layout_constraintStart_toStartOf="@+id/tvProfID"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfID" />
+
+        <ImageView
+            android:id="@+id/ivEditManageProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/imageView21"
+            app:srcCompat="@drawable/editicon" />
+
+        <TextView
+            android:id="@+id/tvSaveSpecificationBTn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dark_blue_with_corner"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/update_52_90_days"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvProfID2"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfID2" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSaveSpecificationBTn" />
+
+        <ImageView
+            android:id="@+id/ivChatIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfID2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="@+id/tvProfID2"
+            app:srcCompat="@drawable/comments" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tvProfCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Title"
+            app:srcCompat="@drawable/delete_icon" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

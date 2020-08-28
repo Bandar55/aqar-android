@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        tools:context=".activitys.IntroActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_intro"
+            android:layout_marginTop="@dimen/_2sdp" />
+
+        <LinearLayout
+            android:id="@+id/layout_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center_vertical"
+                    app:tabBackground="@drawable/intro_selector"
+                    app:tabGravity="center"
+                    app:fillColor="@color/yellow_dark"
+                    app:pageColor="@color/grey"
+                    app:tabIndicatorHeight="0dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_next_intro_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/back_icon"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

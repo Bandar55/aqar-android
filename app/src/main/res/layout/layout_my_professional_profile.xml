@@ -1,0 +1,332 @@
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitys.ActivityMApMyProfileDetails">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/professioanl_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/icon_back" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/tv_title"
+                        android:text="@string/my_professional_profile"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/chat_imageview_contact_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="visible"
+                    android:src="@drawable/delete_red" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professioanl_detail_toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAddressHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/professional_address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pick_locatuion" />
+
+            <EditText
+                android:id="@+id/tvState"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/state"
+                android:textColorHint="@color/black"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddressHeading" />
+
+
+            <EditText
+                android:id="@+id/tv_city"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/city"
+                android:textColorHint="@color/black"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvState" />
+
+            <EditText
+                android:id="@+id/tv_zip_code"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/zip_code"
+                android:textColorHint="@color/black"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_city" />
+
+
+            <TextView
+                android:id="@+id/tvPhoneHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/professional_phone"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapView2" />
+
+            <EditText
+                android:id="@+id/edt_phoneNo"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:inputType="number"
+                android:hint="@string/please_enter_no"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvPhoneHeading"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneHeading" />
+
+            <TextView
+                android:id="@+id/tvSearchBusiness"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_blue_btn"
+                android:gravity="center"
+                android:text="@string/save_amp_next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/website"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/edt_phoneNo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_phoneNo" />
+
+            <EditText
+                android:id="@+id/edt_website_url"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/enter_here"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvArea"
+                app:layout_constraintTop_toBottomOf="@+id/tvArea" />
+
+            <TextView
+                android:id="@+id/tvSpocken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/edt_website_url"
+                app:layout_constraintTop_toBottomOf="@+id/edt_website_url" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/enter_here"
+                android:inputType="textEmailSubject"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvSpocken"
+                app:layout_constraintTop_toBottomOf="@+id/tvSpocken" />
+
+            <EditText
+                android:id="@+id/tv_area"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/area"
+                android:textColorHint="@color/black"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_zip_code" />
+
+
+            <TextView
+                android:id="@+id/tv_pick_locatuion"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_blue_btn"
+                android:drawableRight="@drawable/mappingiconsd"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/select_location_over_the_map"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <fragment
+                android:id="@+id/mapView2"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email">
+
+                <include
+                    layout="@layout/layout_include_business_profile"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="696dp" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>

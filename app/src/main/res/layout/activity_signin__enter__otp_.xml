@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activitys.Signup_Enter_Otp_Activity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/mobile_verification"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/my_toolbar"
+            app:layout_constraintStart_toStartOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title1" />
+
+        <TextView
+            android:id="@+id/text_1_signup_enter_otp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_56sdp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/we_have_sent_you_a_verification_code_via_sms_for_mobile_number_verification"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title1" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/editicon"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="@string/sent_to_000966_52636325"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_1_signup_enter_otp" />
+
+        <EditText
+            android:id="@+id/editTextOtp1SigninEnterOtp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/canvas_otp_bg"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toStartOf="@+id/editTextOtp2SigninEnterOtp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <EditText
+            android:id="@+id/editTextOtp2SigninEnterOtp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/canvas_otp_bg"
+            android:focusable="true"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toStartOf="@+id/editTextOtp3SigninEnterOtp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextOtp1SigninEnterOtp"
+            app:layout_constraintTop_toTopOf="@+id/editTextOtp1SigninEnterOtp" />
+
+        <EditText
+            android:id="@+id/editTextOtp3SigninEnterOtp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/canvas_otp_bg"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toStartOf="@+id/editTextOtp4SigninEnterOtp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextOtp2SigninEnterOtp"
+            app:layout_constraintTop_toTopOf="@+id/editTextOtp2SigninEnterOtp" />
+
+
+        <EditText
+            android:id="@+id/editTextOtp4SigninEnterOtp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/canvas_otp_bg"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toStartOf="@+id/edtotp5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextOtp3SigninEnterOtp"
+            app:layout_constraintTop_toTopOf="@+id/editTextOtp3SigninEnterOtp" />
+
+        <EditText
+            android:id="@+id/editTextotp6"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/canvas_otp_bg"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edtotp5"
+            app:layout_constraintTop_toTopOf="@+id/edtotp5" />
+
+        <EditText
+            android:id="@+id/edtotp5"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/canvas_otp_bg"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toStartOf="@+id/editTextotp6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextOtp4SigninEnterOtp"
+            app:layout_constraintTop_toTopOf="@+id/editTextOtp4SigninEnterOtp" />
+
+
+        <TextView
+            android:id="@+id/text_time_signup_enter_otp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/times_sighup_otp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextOtp2SigninEnterOtp" />
+
+        <TextView
+            android:id="@+id/text_resend_signup_enter_otp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/resend"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_signup_enter_otp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

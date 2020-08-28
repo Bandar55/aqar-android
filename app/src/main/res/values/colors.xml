@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="dark_red">#f11e17</color>
+    <color name="dark_blue">#091cea</color>
+    <color name="light_lue_menu">#91a8abe6</color>
+    <color name="light_blue_menu">#917b7fd2</color>
+
+    <color name="red">#e11e08</color>
+    <color name="green">#1ce756</color>
+
+    <color name="orange">#f16f37</color>
+    <color name="grey">#EAEAEA</color>
+
+    <color name="purple">#694cc7</color>
+    <color name="purpol">#5658ca</color>
+    <color name="colorLightBlack">#444343</color>
+    <color name="white">#ffffff</color>
+    <color name="magenta">#4a188c</color>
+    <color name="gray_dark">#3c3d3e</color>
+    <color name="dark_text_color">#3c3d3e</color>
+
+
+    <!--image view background color-->
+    <color name="placeholder_gray">#A9A9A9</color>
+
+    <color name="editTextColor">#BFC2C1</color>
+    <color name="blue_grey_800">#D7D6D6</color>
+    <color name="blue_grey_dim">#8B8B8B</color>
+    <color name="camera_background">#E9EAEB</color>
+    <color name="popup_color">#737373</color>
+    <color name="semi_dark_text_color">#424242</color>
+    <color name="ultra_dark_text_color">#616161</color>
+    <color name="tab_text_color">#80000000</color>
+    <color name="transparentBlack">#64000000</color>
+
+    <color name="ticket_view">#A09046</color>
+
+    <color name="greylight">#E8E8E8</color>
+    <color name="greyDim">#7C7C7C</color>
+    <color name="black_dim">#878787</color>
+
+    <color name="black">#000000</color>
+    <color name="blackTransperant">#40000000</color>
+    <color name="textgrey">#E5E5E6</color>
+    <color name="Orangelight">#90FF6322</color>
+    <color name="pink_like">#E53E50</color>
+    <color name="blue_light">#009EE6</color>
+
+
+    <color name="unselected">#FFFFFF</color>
+    <color name="yellow">#baa945</color>
+    <color name="yellow_light">#FFFF00</color>
+    <color name="yellow_dark">#DDBD25</color>
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="yellow_light_transparent">#33FFFF00</color>
+
+
+    <color name="black_transparancy">#E6000000</color>
+    <color name="white_transparancy">#4DFFFFFF</color>
+
+    <color name="semitransparent">#77000000</color>
+    <color name="dotEnabled">#baa945</color>
+    <color name="dotDisabled">#CC9E9E9E</color>
+
+
+    <!--Sweet Alert-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+    <!--Chat color-->
+    <color name="default_chat_color">#434343</color>
+    <color name="white_chat_color">@color/white</color>
+    <color name="back_color">#6AC9CB</color>
+    <color name="broadcast_message_back_color">#AFCD59</color>
+    <!--COLOR CPP-->
+
+
+    <!--Toolbar gradient-->
+    <color name="colorStart">#6ac9cb</color>
+    <color name="colorCenter">#7ac9cb</color>
+    <color name="colorEnd">#aadcd4</color>
+
+    <!--Bottom Top gradient-->
+    <color name="colorStartBottom">#99000000</color>
+    <color name="colorCenterBottom">#66000000</color>
+
+
+
+
+
+    <color name="line_button">#565758</color>
+
+
+
+    <array name="array_dot_active">
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+    </array>
+
+
+</resources>

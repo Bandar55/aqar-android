@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "964584341294",
+    "firebase_url": "https://aqarandroid55.firebaseio.com",
+    "project_id": "aqarandroid55",
+    "storage_bucket": "aqarandroid55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964584341294:android:02c1353b06114468",
+        "android_client_info": {
+          "package_name": "com.aqar55"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964584341294-pnn6hsdss1eoa829cg0ah0c33vflu2sq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aqar55",
+            "certificate_hash": "24c7603f9c1b10c37e4792f17cf36a0fd1227a6f"
+          }
+        },
+        {
+          "client_id": "964584341294-r9ib19qh62jh0mr9oafodiurhloj6kip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNPkd9qejd2P4RgX2fL15iyMyNTnYomks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964584341294-r9ib19qh62jh0mr9oafodiurhloj6kip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

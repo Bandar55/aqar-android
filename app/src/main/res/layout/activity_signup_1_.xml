@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_sigUpOne"
+        tools:context=".activitys.Signup_1_Activity">
+
+        <LinearLayout
+            android:id="@+id/layout_signup_1_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_animation_bg"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_signup_1_activity"
+            android:layout_marginTop="2dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/light_gray_round_corner"
+                    android:hint="@string/enter_full_name"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_prof_cat"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_prof_cat"
+                    app:layout_constraintTop_toTopOf="@+id/tv_prof_cat">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/tv_prof_cat"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/light_gray_round_corner"
+                    android:drawableRight="@drawable/down_arrow_black"
+                    android:hint="@string/select_category"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/edit_text1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/edit_text1"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_text1" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_sub_cat"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="36dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_prof_sub_cat"
+                    app:layout_constraintHorizontal_bias="0.0"
+
+                    app:layout_constraintStart_toStartOf="@+id/tv_prof_sub_cat"
+                    app:layout_constraintTop_toTopOf="@+id/tv_prof_sub_cat">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/tv_prof_sub_cat"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/light_gray_round_corner"
+                    android:drawableRight="@drawable/down_arrow_black"
+                    android:hint="@string/select_sub_category"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_prof_cat"
+                    app:layout_constraintStart_toStartOf="@+id/tv_prof_cat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_prof_cat" />
+
+
+                <Spinner
+                    android:id="@+id/editText8"
+                    style="@style/spinner_style"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_8sdp"
+
+                    android:textColorHint="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_prof_sub_cat"
+                    app:layout_constraintStart_toStartOf="@+id/tv_prof_sub_cat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_prof_sub_cat" />
+
+                <TextView
+                    android:id="@+id/editText9"
+                    style="@style/spinner_style"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_select_date_of_birth"
+                    android:paddingLeft="16sp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/editText8"
+                    app:layout_constraintStart_toStartOf="@+id/editText8"
+                    app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/light_gray_round_corner"
+                    android:hint="@string/enter_your_email"
+                    android:padding="16sp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/editText9"
+                    app:layout_constraintStart_toStartOf="@+id/editText9"
+                    app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+                <TextView
+                    android:id="@+id/ok_button_layout_signup_1_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_48sdp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/dark_blue_with_corner"
+                    android:gravity="center"
+                    android:text="@string/ok"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/email"
+                    app:layout_constraintStart_toStartOf="@+id/email"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

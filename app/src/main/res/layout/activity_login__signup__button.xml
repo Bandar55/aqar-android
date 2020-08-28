@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            tools:context=".activitys.Login_Signup_Button_Activity">
+
+            <ImageView
+                android:id="@+id/image_logo_login_signup_button_activity"
+                android:layout_width="@dimen/_148sdp"
+                android:layout_height="@dimen/_148sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_56sdp"
+                android:src="@drawable/aqar_icon_new" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_logo_login_signup_button_activity"
+                android:layout_marginTop="@dimen/_48sdp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:id="@+id/layout_login_signup_button_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="@dimen/_48sdp">
+
+                <LinearLayout
+                    android:id="@+id/text_signin_signup_login_signup_button_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_red_with_corner"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_signup_login_signup_button_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_blue_with_corner"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_below="@+id/layout_login_signup_button_activity"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginBottom="@dimen/_48sdp"
+                android:background="@drawable/light_gray_round_corner"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skip_to_explore_aqar55"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</layout>

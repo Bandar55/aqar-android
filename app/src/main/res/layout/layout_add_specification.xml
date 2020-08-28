@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/add_specification_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/icon_back" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_specifications"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/skipspecification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/skip"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/view_add_specification"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_specification_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_add_specification"
+            app:layout_constraintVertical_bias="0.0">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/select_your_property_specifications"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/cbOptINDOOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Maid Room"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <CheckBox
+                    android:id="@+id/cbOptOutdoor2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Pool"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptOutdoor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cbOptOutdoor" />
+
+                <CheckBox
+                    android:id="@+id/cbOptINDOOR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Basement"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptINDOOR"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptINDOOR" />
+
+                <CheckBox
+                    android:id="@+id/cbOptOutdoor4"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Playground"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptOutdoor2" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/indoor"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <CheckBox
+                    android:id="@+id/cbOptOutdoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Driver Room"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <CheckBox
+                    android:id="@+id/cbOptFurn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Security Alarm"
+                    android:textColor="@color/colorLightBlack"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <CheckBox
+                    android:id="@+id/cbOptParking1"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Security Man"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptParking"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cbOptParking" />
+
+                <CheckBox
+                    android:id="@+id/cbOptParking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Extra Parking"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <CheckBox
+                    android:id="@+id/cbOptViews1"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingStart="5dp"
+                    android:text="Garden View"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptViews"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cbOptViews" />
+
+                <CheckBox
+                    android:id="@+id/cbOptViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="See View"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <CheckBox
+                    android:id="@+id/cbOptViews2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="High City View"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptViews"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptViews" />
+
+                <CheckBox
+                    android:id="@+id/cbOptViews3"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingStart="5dp"
+                    android:text="Unique View"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptViews1" />
+
+                <CheckBox
+                    android:id="@+id/cbOptParking2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingStart="5dp"
+                    android:text="Gym"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptParking"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptParking" />
+
+                <CheckBox
+                    android:id="@+id/cbOptParking3"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingStart="5dp"
+                    android:text="In Compound"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptParking1" />
+
+                <CheckBox
+                    android:id="@+id/cbOptFurn2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingStart="5dp"
+                    android:text="Fire Alarm"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptFurn"
+                    app:layout_constraintEnd_toEndOf="@+id/cbOptFurn4"
+                    app:layout_constraintTop_toTopOf="@+id/cbOptFurn" />
+
+                <CheckBox
+                    android:id="@+id/cbOptFurn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Maintenance Covered"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptFurn"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptFurn" />
+
+                <CheckBox
+                    android:id="@+id/cbOptFurn4"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Housekeeping"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptFurn3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptFurn2" />
+
+                <CheckBox
+                    android:id="@+id/cbOptIndoor2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Pool"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptINDOOR"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cbOptINDOOR" />
+
+                <CheckBox
+                    android:id="@+id/cbOptOutdoor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Extra Room"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptOutdoor"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptOutdoor" />
+
+                <CheckBox
+                    android:id="@+id/cbOptIndoor4"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:button="@drawable/bg_checkbox"
+                    android:paddingLeft="5dp"
+                    android:text="Internal Stair"
+                    android:textColor="@color/colorLightBlack"
+                    app:layout_constraintBottom_toBottomOf="@+id/cbOptINDOOR3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptIndoor2" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/outdoor"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptINDOOR3"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptINDOOR3" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/furnishing"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptOutdoor3"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptOutdoor3" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/parking"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptFurn3"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptFurn3" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/views"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/cbOptParking2"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptParking2" />
+
+                <TextView
+                    android:id="@+id/tvSaveSpecificationBTn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bg_blue_btn"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbOptViews2" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</layout>
